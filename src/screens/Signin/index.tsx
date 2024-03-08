@@ -1,24 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import { styles } from './styles'
+import { ButtonIcon } from '../../components/ButtonIcon'
 
 import { View, 
   Text, 
-  Image ,
-  StatusBar
+  Image
 } from 'react-native'
 
 import IllustrationImg from '../../assets/illustration.png'
-import { ButtonIcon } from '../../components/ButtonIcon'
 
 export function SignIn(): JSX.Element {
   return (
     <View style={styles.container}>
-      <StatusBar 
-        barStyle="light-content" 
-        backgroundColor="transparent" 
-        translucent
-      />
       <Image 
         source={IllustrationImg} 
         style={styles.image} 
@@ -27,9 +21,9 @@ export function SignIn(): JSX.Element {
 
       <View style={styles.content}>
         <Text style={styles.title}>
-          Organize {`\n`}
-          suas jogatinas {`\n`}
-          facilmentes 
+          Conecte-se {`\n`}
+          e organize suas {`\n`}
+          jogatinas 
         </Text>
 
         <Text style={styles.subtitle}>
